@@ -1,7 +1,9 @@
-colors = ["gray", "cream", "cyan"]
-clothes = ["shirt", "flannel"]
 
 def print_combinations(colors, clothes):
     for color in colors:
-        for item in clothes:
-            print(color, item)
+        for cloth in clothes:
+            print(color, cloth)
+
+colors = ["gray", "cream", "cyan"]
+clothes = ["shirt", "flannel"]
+print_combinations(colors, clothes)
