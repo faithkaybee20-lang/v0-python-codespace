@@ -1,11 +1,13 @@
-([2, 3, 5, 9], 7) 
-([2, 3, 5, 9], 4) 
-([6, 3, 4], 10) 
-([6, 5, 1], 10) 
 
-def two_sum(nums, target):
-    for i in range(len(nums)):
-        for j in range(i + 1, len(nums)):
-            if nums[i] + nums[j] == target:
+def two_sum(numbers, target):
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if numbers[i] + numbers[j] == target:
                 return True
     return False
+
+
+print(two_sum([2, 3, 5, 9], 7)) 
+print(two_sum([2, 3, 5, 9], 4)) 
+print(two_sum([6, 3, 4], 10)) 
+print(two_sum([6, 5, 1], 10)) 
